@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brandon Duong</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navigation" class="navigation">
+        <!-- SVG World Globe -->
+        <div class="notice">
+          <span id="world" class="world">
+            <span class="images">
+              <svg><use href="#icon-repeated-world"></use></svg>
+            </span>
+          </span>
+          <div class="progress"></div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a class="nav-menu_link" href="#navigation">
+              <span class="nav-menu_num">01</span>
+              <div class="nav-menu-text-container">
+                <span class="nav-menu-text">Home</span>
+              </div></a
+            >
+          </li>
+          <li>
+            <a class="nav-menu_link" href="#works">
+              <span class="nav-menu_num">02</span>
+              <div class="nav-menu-text-container">
+                <span class="nav-menu-text">Project</span>
+              </div></a
+            >
+          </li>
+          <li>
+            <a class="nav-menu_link" href="#about">
+              <span class="nav-menu_num">03</span>
+              <div class="nav-menu-text-container">
+                <span class="nav-menu-text">About</span>
+              </div></a
+            >
+          </li>
+          <li>
+            <a class="nav-menu_link" href="#contact">
+              <span class="nav-menu_num">04</span>
+              <div class="nav-menu-text-container">
+                <span class="nav-menu-text">Contact</span>
+              </div></a
+            >
+          </li>
+          <div id="indicator"></div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <header id="hero-text" class="hero-text">
+          <h1 class="hero-title">Hello, I'm Brandon.</h1>
+          <div class="contact-icons">
+            <p>Crafting Modern and Responsive Web Experiences</p>
+            <div class="icon-links">
+              <a
+                href="https://www.linkedin.com/in/brandonduong14/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab icon fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://github.com/baoduong47"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab icon fa-github"></i>
+              </a>
+
+              <a href="mailto:brandon.duong14@gmail.com" aria-label="Email">
+                <i class="fas icon fa-envelope"></i>
+              </a>
+
+              <a href="/images/Me.jpg" download aria-label="Download Resume">
+                <i class="fa-solid icon fa-file-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <div class="scroll-container">
+          <p class="scroll-text">Scroll Down</p>
+          <i class="fa-solid fa-caret-down arrow"></i>
+        </div>
+
+        <div class="toggle-container">
+          <div id="toggle" class="toggle"></div>
+          <span id="toggle-text">LIGHT MODE</span>
+        </div>
+        <figure class="blob-cont">
+          <div class="yellow blob" aria-hidden="true"></div>
+          <div class="red blob" aria-hidden="true"></div>
+          <div class="green blob" aria-hidden="true"></div>
+        </figure>
+      </section>
+
+      <!-- Project Section -->
+      <section id="works" class="works">
+        <header>
+          <h1 class="project-title">Projects</h1>
+        </header>
+
+        <div class="grid-container">
+          <div class="grid-items scroll">
+            <div class="grid-item">
+              <h2>AstraChat</h2>
+              <p>
+                AstraChat is a fantasy-themed full-stack messaging app built
+                with React.js, enabling real-time interaction. Users can chat
+                live, create custom blog posts, interact with other users posts,
+                and personalize their profiles.
+              </p>
+
+              <div class="actions">
+                <a
+                  href="https://astra-world.netlify.app/"
+                  class="btn"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/baoduong47/AstraChat"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab icon fa-github"></i>
+                </a>
+              </div>
+              <div class="media">
+                <!-- Replace with a video tag if you want to show a video -->
+                <video src="images/AstraChat.mov" autoplay muted loop></video>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <h2>Etch-A-Sketch</h2>
+              <p>
+                The Etch-a-Sketch project simulates the classic drawing toy in a
+                web browser. Users can sketch by dragging their mouse across a
+                grid, adjust the grid size, select from a rainbow color picker,
+                and erase their drawings.
+              </p>
+
+              <div class="actions">
+                <a
+                  href="https://baoduong47.github.io/etch-a-sketch/"
+                  class="btn"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/baoduong47/etch-a-sketch"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab icon fa-github"></i>
+                </a>
+              </div>
+              <div class="media">
+                <!-- Replace with a video tag if you want to show a video -->
+                <video
+                  src="images/Etch-A-Sketch.mov"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h2>SlitherSpace</h2>
+              <p>
+                Slither Space is a space themed snake game where players control
+                the snake to collect food on the map, increasing both the score
+                and the snake's length, all while avoiding walls and their own
+                tail.
+              </p>
+
+              <div class="actions">
+                <a
+                  href="https://slitherspace.netlify.app/"
+                  class="btn"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/baoduong47/Slither-Space"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab icon fa-github"></i>
+                </a>
+              </div>
+              <div class="media">
+                <!-- Replace with a video tag if you want to show a video -->
+                <video
+                  src="images/Slither-Space.mov"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <h2>TicketHub</h2>
+              <p>
+                TicketHub is an event discovery platform that leverages the
+                Ticketmaster API to offer real-time event listings. This
+                application allows users to search for events, save favorites,
+                and access detailed event information.
+              </p>
+              <div class="project-links">
+                <div class="actions">
+                  <a href="#" class="btn">View Project</a>
+                  <a
+                    href="https://github.com/baoduong47/TicketHub"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i class="fab icon fa-github"></i>
+                  </a>
+                </div>
+                <div class="media">
+                  <!-- Replace with a video tag if you want to show a video -->
+                  <video src="images/TicketHub.mov" autoplay muted loop></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="profile-image-container">
+          <img class="profile-image" src="images/profile-image.jpg" />
+          <div class="about-content">
+            <h1 class="about-title">About Me</h1>
+            <h2 class="about-subtitle">(Web Developer / UI Engineer)</h2>
+            <div class="about-description">
+              <div class="about-details">
+                <p class="about-text">
+                  My name is Brandon Duong, I'm a front-end developer based in
+                  Atlanta, Georgia. I love creating clean, user-friendly
+                  interfaces that is both minimalistic and modern. When I'm not
+                  coding, you can find me playing volleyball, working out,
+                  exploring new music, or spending quality time with my cat
+                  (Roxas). Feel free to explore my portfolio and reach out if
+                  you'd like to connect!
+                </p>
+                <a
+                  href="#works"
+                  class="about-button"
+                  download
+                  aria-label="Download Resume"
+                  >View Resume</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-header">
+          <h1 class="contact-heading">Let's talk!</h1>
+          <p class="contact-intro">
+            Would you like to say hello or have some feedback? Contact me
+            anytime!
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fa-solid fa-phone"> </i><span> (678)-815-2189</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>brandon.duong14@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="536a0341-b85a-4f0d-a3ef-0e85c94238ef"
+          />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group form-group-textarea">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-input"
+              required
+            ></textarea>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <button class="form-button" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer id="footer" class="footer">
+      <p class="footer-text">
+        <span><i class="fa-regular fa-copyright"></i></span> 2024 Brandon
+        Duong<br />
+        All rights reserved.
+      </p>
+      <div class="local-time">
+        <span class="local-time_label">LOCAL TIME </span>
+        <div>
+          <span class="local-time_current" id="time"></span>,
+          <span class="local-time_zone">ATLANTA</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="light-effect blob"></div>
+    <svg
+      aria-hidden="true"
+      style="width: 0; height: 0"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-world" viewBox="0 0 216 100">
+          <title>world</title>
+          <g fill-rule="nonzero">
+            <path
+              d="M48 94l-3-4-2-14c0-3-1-5-3-8-4-5-6-9-4-11l1-4 1-3c2-1 9 0 11 1l3 2 2 3 1 2 8 2c1 1 2 2 0 7-1 5-2 7-4 7l-2 3-2 4-2 3-2 1c-2 2-2 9 0 10v1l-3-2zM188 90l3-2h1l-4 2zM176 87h2l-1 1-1-1zM195 86l3-2-2 2h-1zM175 83l-1-2-2-1-6 1c-5 1-5 1-5-2l1-4 2-2 4-3c5-4 9-5 9-3 0 3 3 3 4 1s1-2 1 0l3 4c2 4 1 6-2 10-4 3-7 4-8 1zM100 80c-2-4-4-11-3-14l-1-6c-1-1-2-3-1-4 0-2-4-3-9-3-4 0-5 0-7-3-1-2-2-4-1-7l3-6 3-3c1-2 10-4 11-2l6 3 5-1c3 1 4 0 5-1s-1-2-2-2l-4-1c0-1 3-3 6-2 3 0 3 0 2-2-2-2-6-2-7 0l-2 2-1 2-3-2-3-3c-1 0-1 1 1 2l1 2-2-1c-4-3-6-2-8 1-2 2-4 3-5 1-1-1 0-4 2-4l2-2 1-2 3-2 3-2 2 1c3 0 7-3 5-4l-1-3h-1l-1 3-2 2h-1l-2-1c-2-1-2-1 1-4 5-4 6-4 11-3 4 1 4 1 2 2v1l3-1 6-1c5 0 6-1 5-2l2 1c1 2 2 2 2 1-2-4 12-7 14-4l11 1 29 3 1 2-3 3c-2 0-2 0-1 1l1 3h-2c-1-1-2-3-1-4h-4l-6 2c-1 1-1 1 2 2 3 2 4 6 1 8v3c1 3 0 3-3 0s-4-1-2 3c3 4 3 7-2 8-5 2-4 1-2 5 2 3 0 5-3 4l-2-1-2-2-1-1-1-1-2-2c-1-2-1-2-4 0-2 1-3 4-3 5-1 3-1 3-3 1l-2-4c0-2-1-3-2-3l-1-1-4-2-6-1-4-2c-1 1 3 4 5 4h2c1 1 0 2-1 4-3 2-7 4-8 3l-7-10 5 10c2 2 3 3 5 2 3 0 2 1-2 7-4 4-4 5-4 8 1 3 1 4-1 6l-2 3c0 2-6 9-8 9l-3-2zm22-51l-2-3-1-1v-1c-2 0-2 2-1 4 2 3 4 4 4 1z"
+            />
+            <path
+              d="M117 75c-1-2 0-6 2-7h2l-2 5c0 2-1 3-2 1zM186 64h-3c-2 0-6-3-5-5 1-1 6 1 7 3l2 3-2-1zM160 62h2c1 1 0 1-1 1l-1-1zM154 57l-1-2c2 2 3 1 2-2l-2-3 2 2 1 4 1 3v2l-3-4zM161 59c-1-1-1-2 1-4 3-3 4-3 4 0 0 4-2 6-5 4zM167 59l1-1 1 1-1 1-1-1zM176 59l1-1v2l-1-1zM141 52l1-1v2l-1-1zM170 52l1-1v2l-1-1zM32 50c-1-2-4-3-6-4-4-1-5-3-7-6l-3-5-2-2c-1-3-1-6 2-9 1-1 2-3 1-5 0-4-3-5-8-4H4l2-2 1-1 1-1 2-1c1-2 7-2 23-1 12 1 12 1 12-1h1c1 1 2 2 3 1l1 1-3 1c-2 0-8 4-8 5l2 1 2 3 4-3c3-4 4-4 5-3l3 1 1 2 1 2c3 0-1 2-4 2-2 0-2 0-2 2 1 1 0 2-2 2-4 1-12 9-12 12 0 2 0 2-1 1 0-2-2-3-6-2-3 0-4 1-4 3-2 4 0 6 3 4 3-1 3-1 2 1s-1 2 1 2l1 2 1 3 1 1-3-2zm8-24l1-1c0-1-4-3-5-2l1 1v2c-1 1-1 1 0 0h3zM167 47v-3l1 2c1 2 0 3-1 1z"
+            />
+            <path
+              d="M41 43h2l-1 1-1-1zM37 42v-1l2 1h-2zM16 38l1-1v2l-1-1zM172 32l2-3h1c1 2 0 4-3 4v-1zM173 26h2l-1 1-1-1zM56 22h2l-2 1v-1zM87 19l1-2 1 3-1 1-1-2zM85 19l1-1v1l-1 1v-1zM64 12l1-3c2 0-1-4-3-4s-2 0 0-1V3l-6 2c-3 1-3 1-2-1 2-1 4-2 15-2h14c0 2-6 7-10 9l-5 2-2 1-2-2zM53 12l1-1c2 0-1-3-3-3-2-1-1-1 1-1l4 2c2 1 2 1 1 3-2 1-4 2-4 0zM80 12l1-1 1 1-1 1-1-1zM36 8h-2V7c1-1 7 0 7 1h-5zM116 7l1-1v1l-1 1V7zM50 5h2l-1 1-1-1zM97 5l2-1c0-1 1-1 0 0l-2 1z"
+            />
+          </g>
+        </symbol>
+        <symbol id="icon-repeated-world" viewBox="0 0 432 100">
+          <use href="#icon-world" x="0"></use>
+          <use href="#icon-world" x="189"></use>
+        </symbol>
+      </defs>
+    </svg>
+    <svg>
+      <filter id="noiseFilter">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.6"
+          stitchTiles="stitch"
+        />
+        <feColorMatrix
+          in="colorNoise"
+          type="matrix"
+          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+        />
+        <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
+        <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+      </filter>
+    </svg>
+    <!--Back To Top Button-->
+    <a href="#navigation" id="back-to-top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+    <script src="script.js" defer></script>
+  </body>
+</html>
